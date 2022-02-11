@@ -1,7 +1,7 @@
 FROM node:16-alpine
 WORKDIR /app
 
-COPY package.json package-lock.json ./
+COPY package.json ./
 RUN npm install
 
 # Copy the source files into the image
